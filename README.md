@@ -67,20 +67,20 @@ The system includes a fully dynamic supervisory visualization dashboard that int
 | **STOP** | Button Input | `PLC_PRG.xStopButton` | Master override; instantly forces system to safe state. |
 | **RUN BEACON** | Animated Rectangle | `PLC_PRG.xSystemActive` | Shifting Fill Color:<br>
 
-<br>• **Dark Gray** = System Idle/Off<br>
+<br>• Gray = System Idle/Off<br>
 
-<br>• **Bright Green** = Line Operational |
+<br>• Green = Line Operational |
 | **FAULT BEACON** | Animated Rectangle | `PLC_PRG.xZone2JamAlarm` | Shifting Fill Color:<br>
 
-<br>• **Dark Gray** = Nominal Operation<br>
+<br>• Gray = Nominal Operation<br>
 
-<br>• **Bright Red** = Material Jam / Safety Fault |
+<br>• Red = Material Jam / Safety Fault |
 | **GATE ACTUATOR** | Animated Ellipse | `PLC_PRG.xSortGateActuator` | Shifting Fill Color:<br>
 
-<br>• **Light Gray** = Valve Retracted<br>
+<br>• Gray = Valve Retracted<br>
 
-<br>• **Bright Orange** = Pneumatics Actuated (2s Pulse) |
-| **THROUGHPUT METER** | Interpolated Text Block | `PLC_PRG.diTotalBoxes` | String variable interpolation (`Total Packets: %d`) printing live throughput directly on screen. |
+<br>• Orange = Pneumatics Actuated (2s Pulse) |
+| **THROUGHPUT METER** | Interpolated Text Block | `PLC_PRG.diTotalBoxes` | String variable interpolation (`Total Packets: %d`) printing live throughput metrics directly on screen. |
 
 ---
 
@@ -132,9 +132,5 @@ Device (CODESYS Control Win V3 x64)
         │   └── Global_Variables        # Global I/O Maps, Timers, and Telemetry Registers
         └── 03_Visualizations
             └── Visualization (VISU)    # Dynamic Operator Supervisory Control Panel
-
-```
-
-```
 
 ```
