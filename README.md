@@ -1,9 +1,8 @@
-```markdown
 # Multi-Zone Industrial Sorting System Factory Simulation
 
 An industrial-grade control application designed in **CODESYS V3.5 (IEC 61131-3)** simulating an automated multi-zone conveyor routing and material handling network. This project demonstrates modular, production-ready PLC programming paradigms, covering sequential state machine development, defensive timing routines for fault tolerance, signal edge analysis, and dynamic Human-Machine Interface (HMI) integration.
 
----
+
 
 ## 🛠️ Deep-Dive Control Engineering Implementation
 
@@ -15,7 +14,7 @@ The system utilizes a dual-button latching routine to manage the global system a
   // Master control loop logic with hard stop override prioritization
   xSystemActive := (xStartButton OR xSystemActive) AND NOT xStopButton AND NOT xZone2JamAlarm;
 
-```
+
 
 ### 2. Cascading Downstream Conveyor Sequencing
 
